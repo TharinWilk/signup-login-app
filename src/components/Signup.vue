@@ -1,5 +1,5 @@
 <template lang="html">
-  <div class="signup centered-absolute form">
+  <div class="signup form">
     <div class="form-text">
       <h3>Signup</h3>
     </div>
@@ -22,7 +22,7 @@
     </div>
 
     <div class="form-button">
-      <button type="button" class="centered-absolute" @click="signup">Sign Up Now</button>
+      <button type="button" class="" @click="signup">Sign Up Now</button>
     </div>
   </div>
 </template>

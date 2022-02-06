@@ -1,5 +1,5 @@
 <template lang="html">
-  <div class="login centered-absolute form">
+  <div class="login form">
     <div class="form-text">
       <h3>Login</h3>
     </div>
@@ -47,7 +47,15 @@ export default {
 
 <style lang="css">
 .login {
-  height: clamp(250px, 45%, 320px);
+  height: 16rem;
+}
+
+.login .form-text {
+  padding-bottom: 3rem;
+}
+
+.login .form-section {
+  height: 45%;
 }
 
 .login .form-section .form-input {

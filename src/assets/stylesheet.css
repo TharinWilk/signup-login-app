@@ -36,6 +36,7 @@
 
   /* margin */
   --margin-xl: clamp(2.5rem, 2.5vw + 0.25rem, 4rem);
+  --margin-xxl: clamp(5rem, 5vw + 1rem, 20rem);
 }
 
 /* Base Styles */
@@ -118,8 +119,11 @@ nav button:hover {
 
 /* form */
 .form {
-  width: clamp(320px, 60%, 400px);
-  height: clamp(270px, 55%, 400px);
+  width: 18rem;
+  height:  24rem;
+  margin: 0 auto;
+  margin-top: var(--margin-xxl);
+  margin-bottom: var(--margin-xxl);
   background-color: var(--primary-color);
   border-radius: 20px;
   box-shadow: 0 0 5px 5px var(--dark-primary-color);
@@ -133,7 +137,7 @@ nav button:hover {
   border-bottom: 2px solid var(--dark-primary-color);
 }
 
-.form-section {
+ .form-section {
   width: 75%;
   margin: 0 auto;
   height: 50%;
@@ -141,7 +145,6 @@ nav button:hover {
 
 .form-input {
   height: 30%;
-  margin-top: 2.5%;
 }
 
 .form-input input {
