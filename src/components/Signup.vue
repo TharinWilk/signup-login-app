@@ -4,26 +4,28 @@
       <h3>Signup</h3>
     </div>
 
-    <div class="form-section">
-      <div class="form-input">
-        <input type="email" name="email" v-model="email" @keypress.enter="focusPassword" autocomplete="off" placeholder=" " required>
-        <label for="email">Email</label>
+    <form>
+      <div class="form-section">
+        <div class="form-input">
+          <input type="email" name="email" v-model="email" @keypress.enter="focusPassword" autocomplete="off" placeholder=" " required>
+          <label for="email">Email</label>
+        </div>
+
+        <div class="form-input">
+          <input type="password" name="password" v-model="password" @keypress.enter="focusConfirm" ref="password" autocomplete="off" placeholder=" " required>
+          <label for="password">Password</label>
+        </div>
+
+        <div class="form-input">
+          <input type="password" name="confirm" v-model="confirm" @keypress.enter="signup" ref="confirm" autocomplete="off" placeholder=" " required>
+          <label for="confirm">Confirm Password</label>
+        </div>
       </div>
 
-      <div class="form-input">
-        <input type="password" name="password" v-model="password" @keypress.enter="focusConfirm" ref="password" autocomplete="off" placeholder=" " required>
-        <label for="password">Password</label>
+      <div class="form-button">
+        <button type="submit" @click="signup">Sign Up Now</button>
       </div>
-
-      <div class="form-input">
-        <input type="password" name="confirm" v-model="confirm" @keypress.enter="signup" ref="confirm" autocomplete="off" placeholder=" " required>
-        <label for="confirm">Confirm Password</label>
-      </div>
-    </div>
-
-    <div class="form-button">
-      <button type="button" class="" @click="signup">Sign Up Now</button>
-    </div>
+    </form>
   </div>
 </template>
 

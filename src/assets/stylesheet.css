@@ -71,6 +71,10 @@ button:hover {
   background-color: var(--primary-color);
 }
 
+form {
+  height: 100%;
+}
+
 input {
   padding: 0.5rem;
   width: max(60%, 300px);
